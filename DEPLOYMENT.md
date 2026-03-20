@@ -7,7 +7,7 @@ This app is configured for automatic deployment to GitHub Pages when you push to
 ### Automatic Deployment
 1. Push your code to GitHub
 2. GitHub Actions will automatically build and deploy to GitHub Pages
-3. Your app will be available at: `https://maddin5575.github.io/mealPlaner/`
+3. Your app will be available at: `https://Maddin5575SupaBot.github.io/mealPlaner/`
 
 ### Manual Deployment
 ```bash
