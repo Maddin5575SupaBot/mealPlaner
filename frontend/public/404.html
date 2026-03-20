@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Family Weekly Meal Planner - Plan your meals" />
+  <title>Family Meal Planner 🍽️</title>
+  <script>
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script checks the current location and redirects to index.html if needed
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+    
+    // Handle 404s by redirecting to index.html
+    var segmentCount = 0;
+    var location = window.location;
+    location.replace(
+      location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +
+      '/mealPlaner' +
+      location.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+      location.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+      (location.search ? '&q=' + location.search.slice(1).replace(/&/g, '~and~') : '') +
+      location.hash
+    );
+  </script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    // Fallback: if JavaScript doesn't redirect, show a message
+    document.getElementById('root').innerHTML = `
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>🍽️ Family Meal Planner</h1>
+        <p>Loading... If this page doesn't redirect automatically, please go to:</p>
+        <p><a href="/mealPlaner/">/mealPlaner/</a></p>
+      </div>
+    `;
+  </script>
+</body>
+</html>

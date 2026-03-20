@@ -1,0 +1,30 @@
+{
+  "name": "mealplanner-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Family Weekly Meal Planner",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "db:init": "node src/database/init.js"
+  },
+  "keywords": ["meal-planner", "family", "grocery-list", "recipes"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
