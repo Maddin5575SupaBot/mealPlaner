@@ -103,4 +103,4 @@ npm start
 
 ## 🤝 Contributing
 
-This is a personal project focused on solving real meal planning problems for families and individuals.
+This is a personal project focused on solving real meal planning problems for families and individuals.# Trigger deployment
